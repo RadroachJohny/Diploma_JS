@@ -6,7 +6,10 @@ const eventListeners = () =>{
         burgerMenu = menuBtn.querySelector('IMG'),
         closeMenu = document.querySelector('.close-menu-btn'),
         popupMenuCloseBtn = closeMenu.querySelector('IMG'),
-        freeVisitForm = document.getElementById('free_visit_form');
+        freeVisitForm = document.getElementById('free_visit_form'),
+        giftPopup = document.getElementById('gift'),
+        fixedGift = document.querySelector('.fixed-gift');
+        console.log(fixedGift);
 
 
   window.addEventListener('resize', () =>{
@@ -28,10 +31,14 @@ const eventListeners = () =>{
     } else if (target.matches('a')){
       if(target.closest('.popup-menu'))
       menu.style.display = 'none';
-    } else if(target.matches('.close_icon') || target.matches('.overlay')){
+    } else if(target.matches('.close_icon') || target.matches('.overlay') || target.matches('.close-btn')){
       freeVisitForm.style.display = 'none';
+      giftPopup.style.display = 'none';
     } else if (target.closest('.free-visit')){
       freeVisitForm.style.display = 'flex';
+    } else if (target.closest('.fixed-gift')){
+      giftPopup.style.display = 'flex';
+      fixedGift.style.display = 'none';
     }
 
   });
