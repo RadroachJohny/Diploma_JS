@@ -1,3 +1,5 @@
+'use strict';
+
 const burgerStick = () =>{
   
   let menuBtn = document.querySelector('.top-menu');
@@ -11,6 +13,7 @@ const burgerStick = () =>{
     menuBtn.classList.remove('menu-fix');
   }
   });
+
 };
 
 export default burgerStick;

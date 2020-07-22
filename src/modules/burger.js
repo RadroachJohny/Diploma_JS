@@ -1,3 +1,5 @@
+'use strict';
+
 const burgerMenu = () =>{
   const menuBtn = document.querySelector('.menu-button');
 
@@ -8,7 +10,6 @@ const burgerMenu = () =>{
       menuBtn.style.display = 'none';
     }
   });
-
   
 };
 
