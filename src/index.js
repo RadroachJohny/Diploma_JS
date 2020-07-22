@@ -1,11 +1,14 @@
 'use strict';
 
+import freeVisit from './modules/freeVisit';
 import clubChoice from './modules/clubChoice';
-import burgerMenu from './modules/burger';
+import eventListeners from './modules/eventListeners';
 import burgerStick from './modules/burgerSticky';
 
-burgerMenu();
+eventListeners();
 
 burgerStick();
 
 clubChoice();
+
+freeVisit();
