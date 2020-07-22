@@ -1,3 +1,4 @@
+'use strict';
 
 import clubChoice from './modules/clubChoice';
 import burgerMenu from './modules/burger';
