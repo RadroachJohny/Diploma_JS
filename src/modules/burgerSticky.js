@@ -14,9 +14,7 @@ const burgerStick = () =>{
       else if(window.scrollY < 187){
       menuBtn.classList.remove('menu-fix');
       }
-    }
-    
-  
+    }  
   });
 
 };

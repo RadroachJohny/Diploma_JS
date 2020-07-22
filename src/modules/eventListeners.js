@@ -9,7 +9,6 @@ const eventListeners = () =>{
         freeVisitForm = document.getElementById('free_visit_form'),
         giftPopup = document.getElementById('gift'),
         fixedGift = document.querySelector('.fixed-gift');
-        console.log(fixedGift);
 
 
   window.addEventListener('resize', () =>{
