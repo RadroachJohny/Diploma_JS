@@ -1,5 +1,6 @@
 'use strict';
 
+import photoGallery from './modules/gallery';
 import calc from './modules/calculator';
 import giftPopup from './modules/giftPopup';
 import freeVisit from './modules/freeVisit';
@@ -24,3 +25,5 @@ giftPopup();
 mainSlider();
 
 calc();
+
+photoGallery();
