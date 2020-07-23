@@ -6,9 +6,7 @@ const eventListeners = () =>{
         burgerMenu = menuBtn.querySelector('IMG'),
         closeMenu = document.querySelector('.close-menu-btn'),
         popupMenuCloseBtn = closeMenu.querySelector('IMG'),
-        freeVisitForm = document.getElementById('free_visit_form'),
-        giftPopup = document.getElementById('gift'),
-        fixedGift = document.querySelector('.fixed-gift'),
+        freeVisitForm = document.getElementById('free_visit_form'),       
         btnCallback = document.querySelector('.callback-btn'),
         callbackForm = document.getElementById('callback_form');
 
@@ -34,18 +32,15 @@ const eventListeners = () =>{
       if(target.closest('.popup-menu'))
       menu.style.display = 'none';
     } else if(target.matches('.close_icon') || target.matches('.overlay') || target.matches('.close-btn')){
+      console.log(target);
       freeVisitForm.style.display = 'none';
-      giftPopup.style.display = 'none';
       callbackForm.style.display = 'none';
     } else if (target.closest('.free-visit')){
       freeVisitForm.style.display = 'flex';
-    } else if (target.closest('.fixed-gift')){
-      giftPopup.style.display = 'flex';
-      fixedGift.style.display = 'none';
-    } else if(target === btnCallback) {
+    }
+    else if(target === btnCallback) {
       callbackForm.style.display = 'flex';
     }
-
   });
   
 };

@@ -1,5 +1,6 @@
 'use strict';
 
+import giftPopup from './modules/giftPopup';
 import freeVisit from './modules/freeVisit';
 import clubChoice from './modules/clubChoice';
 import eventListeners from './modules/eventListeners';
@@ -15,3 +16,5 @@ clubChoice();
 freeVisit();
 
 toTop();
+
+giftPopup();
