@@ -6,6 +6,7 @@ import clubChoice from './modules/clubChoice';
 import eventListeners from './modules/eventListeners';
 import burgerStick from './modules/burgerSticky';
 import toTop from './modules/toTopArrow';
+import mainSlider from './modules/mainSlider';
 
 eventListeners();
 
@@ -18,3 +19,5 @@ freeVisit();
 toTop();
 
 giftPopup();
+
+mainSlider();

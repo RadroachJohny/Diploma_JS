@@ -32,7 +32,6 @@ const eventListeners = () =>{
       if(target.closest('.popup-menu'))
       menu.style.display = 'none';
     } else if(target.matches('.close_icon') || target.matches('.overlay') || target.matches('.close-btn')){
-      console.log(target);
       freeVisitForm.style.display = 'none';
       callbackForm.style.display = 'none';
     } else if (target.closest('.free-visit')){
