@@ -1,5 +1,6 @@
 'use strict';
 
+import calc from './modules/calculator';
 import giftPopup from './modules/giftPopup';
 import freeVisit from './modules/freeVisit';
 import clubChoice from './modules/clubChoice';
@@ -21,3 +22,5 @@ toTop();
 giftPopup();
 
 mainSlider();
+
+calc();
