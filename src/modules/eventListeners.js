@@ -8,7 +8,10 @@ const eventListeners = () =>{
         popupMenuCloseBtn = closeMenu.querySelector('IMG'),
         freeVisitForm = document.getElementById('free_visit_form'),
         giftPopup = document.getElementById('gift'),
-        fixedGift = document.querySelector('.fixed-gift');
+        fixedGift = document.querySelector('.fixed-gift'),
+        btnCallback = document.querySelector('.callback-btn'),
+        callbackForm = document.getElementById('callback_form');
+
 
 
   window.addEventListener('resize', () =>{
@@ -33,11 +36,14 @@ const eventListeners = () =>{
     } else if(target.matches('.close_icon') || target.matches('.overlay') || target.matches('.close-btn')){
       freeVisitForm.style.display = 'none';
       giftPopup.style.display = 'none';
+      callbackForm.style.display = 'none';
     } else if (target.closest('.free-visit')){
       freeVisitForm.style.display = 'flex';
     } else if (target.closest('.fixed-gift')){
       giftPopup.style.display = 'flex';
       fixedGift.style.display = 'none';
+    } else if(target === btnCallback) {
+      callbackForm.style.display = 'flex';
     }
 
   });
