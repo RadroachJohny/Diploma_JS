@@ -6,7 +6,8 @@ const eventListeners = () =>{
         burgerMenu = menuBtn.querySelector('IMG'),
         closeMenu = document.querySelector('.close-menu-btn'),
         popupMenuCloseBtn = closeMenu.querySelector('IMG'),
-        freeVisitForm = document.getElementById('free_visit_form'),       
+        freeVisitForm = document.getElementById('free_visit_form'),
+        thanks = document.getElementById('thanks'),        
         btnCallback = document.querySelector('.callback-btn'),
         callbackForm = document.getElementById('callback_form');
 
@@ -19,6 +20,8 @@ const eventListeners = () =>{
       menuBtn.style.display = 'none';
     }
   });
+
+  // thanks.style.display = 'block';
 
 
   window.addEventListener('click', (event) =>{
@@ -34,6 +37,7 @@ const eventListeners = () =>{
     } else if(target.matches('.close_icon') || target.matches('.overlay') || target.matches('.close-btn')){
       freeVisitForm.style.display = 'none';
       callbackForm.style.display = 'none';
+      thanks.style.display = 'none';
     } else if (target.closest('.free-visit')){
       freeVisitForm.style.display = 'flex';
     }
