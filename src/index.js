@@ -9,6 +9,7 @@ import eventListeners from './modules/eventListeners';
 import burgerStick from './modules/burgerSticky';
 import toTop from './modules/toTopArrow';
 import mainSlider from './modules/mainSlider';
+import carousel from './modules/carousel';
 
 eventListeners();
 
@@ -27,3 +28,5 @@ mainSlider();
 calc();
 
 photoGallery();
+
+carousel();

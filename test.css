@@ -1183,17 +1183,29 @@ nav.popup-menu .close-menu-btn img {
   padding: 5px 5px 5px 18px;
   margin-right: 5px;
 }
+
+/* НОВЫЕ СТИЛИ */
+#services .wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+/* НОВЫЕ СТИЛИ */
+
 .services-slider {
+  position: relative;
   display: flex;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px; 
+  padding-right: 15px;  */
 }
+
+
 .services-slider .slide {
   text-align: center;
   margin-right: 6px;
   margin-left: 6px;
-  width: 210px;
+  /* width: 210px; */
+  width: 20%;
 }
 .services-slider .slide img {
   margin: 0 auto 19px;
@@ -1214,14 +1226,18 @@ nav.popup-menu .close-menu-btn img {
   max-width: 200px;
   margin: 0 auto;
 }
-.services-slider .slider-arrow {
+/* .initially was services-slider instead of wrapper */
+.wrapper .slider-arrow {
   position: absolute;
-  top: 75px;
+  /* top: 75px;*/
+  top: 48%;
+  transform: translateY(-50%);
   margin-top: -18px;
   z-index: 100;
   cursor: pointer;
 }
-.services-slider .slider-arrow span {
+/* .initially was services-slider instead of wrapper */
+.wrapper .slider-arrow span {
   display: block;
   width: 36px;
   height: 37px;
@@ -1230,10 +1246,12 @@ nav.popup-menu .close-menu-btn img {
   text-align: center;
   padding-top: 11px;
 }
-.services-slider .slider-arrow.prev {
+/* .initially was services-slider instead of wrapper */
+.wrapper .slider-arrow.prev {
   left: 2px;
 }
-.services-slider .slider-arrow.next {
+/* .initially was services-slider instead of wrapper */
+.wrapper .slider-arrow.next {
   right: 2px;
 }
 #gallery {
