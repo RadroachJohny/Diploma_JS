@@ -11,7 +11,7 @@ const carousel = () =>{
         wrapper.append(arrowPrev);
         wrapper.append(arrowNext);
 
-        arrowPrev.classList.add('slider-arrow', 'prev', );
+        arrowPrev.classList.add('slider-arrow', 'prev', 'carousel-prev' );
         arrowPrev.style.left = 14 + 'px';
         arrowPrevSpan.classList.add('carousel-prev');
         arrowPrev.append(arrowPrevSpan);
@@ -104,12 +104,12 @@ const carousel = () =>{
     }
 
     controlSlider() {
-      // this.prev.addEventListener('click', this.prevSlider.bind(this));     
+      this.prev.addEventListener('click', this.prevSlider.bind(this));
       this.next.addEventListener('click', this.nextSlider.bind(this));
     }
 
     prevSlider(){
-      this.options.maxPosition = this.slides.length - this.slidesToShow
+      this.options.maxPosition = this.slides.length - this.slidesToShow;
       if ( this.options.infinity || this.options.position > 0){
         --this.options.position;
         if (this.options.position < 0) {
@@ -121,7 +121,7 @@ const carousel = () =>{
     }
 
     nextSlider(){
-      this.options.maxPosition = this.slides.length - this.slidesToShow
+      this.options.maxPosition = this.slides.length - this.slidesToShow;
       // console.log(this.options.maxPosition);
       if( this.options.infinity || this.options.position < this.options.maxPosition){
       ++this.options.position;
