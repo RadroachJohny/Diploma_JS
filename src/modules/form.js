@@ -7,14 +7,11 @@ const footerForm = () =>{
         form = document.querySelectorAll('form'),
         thx = document.getElementById('thanks');
   
-  let warnMessage;  
+  let warnMessage;
 
-  statusMessage.style.cssText = 'font-size: 1rem; color: #ffffff;';
-  
+  statusMessage.style.cssText = 'font-size: 1rem; color: #ffffff;';  
 
     form.forEach((elem) => {
-  
-
     elem.addEventListener('submit', (event) => {
     event.preventDefault();
     thx.querySelector('h4').textContent = 'Спасибо!';
@@ -55,12 +52,10 @@ const footerForm = () =>{
     if(elem.id === 'card_order'){
       statusMessage.style.color = '#000000';
     }
-      statusMessage.textContent = loadMessage;
-    
 
+      statusMessage.textContent = loadMessage;
 
     const formData = new FormData(elem);
-
 
     function messageRemove() {
       statusMessage.textContent = '';
@@ -87,8 +82,7 @@ const footerForm = () =>{
       }else{
         statusMessage.textContent = successMessage;
         setTimeout(messageRemove, 5000);
-      }
-      
+      }      
 
    
   })
@@ -99,11 +93,9 @@ const footerForm = () =>{
       thx.querySelector('h4').textContent = 'Ошибка отправки';
       thx.querySelector('p').textContent = errorMessage;
     }
-
     statusMessage.textContent = errorMessage;
     console.log(error);
   });
-
     elem.reset();
 
   });

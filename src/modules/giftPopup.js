@@ -18,9 +18,10 @@ const giftPopup = () =>{
         giftPopup.style.display = 'none';
       };
     });
-  } else {
-    return;
   }
+  //  else {
+  //   return;
+  // }
 
 };
 

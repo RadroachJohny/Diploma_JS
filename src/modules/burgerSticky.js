@@ -1,10 +1,9 @@
 'use strict';
-
 const burgerStick = () =>{
   
   let menuBtn = document.querySelector('.top-menu');
   
-  window.addEventListener('scroll', () => {
+  // window.addEventListener('scroll', () => {
 
     if(window.innerWidth < 768){
 
@@ -15,7 +14,8 @@ const burgerStick = () =>{
       menuBtn.classList.remove('menu-fix');
       }
     }  
-  });
+  // });
+
 
 };
 

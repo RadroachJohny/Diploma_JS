@@ -1,7 +1,6 @@
 const mainSlider = () =>{
   const slide = document.querySelectorAll('.main-slider > .slide'),
-        dotsContainer = document.querySelector('.portfolio-dots'),
-        mainSlider = document.querySelector('.main-slider');
+        dotsContainer = document.querySelector('.portfolio-dots');
 
   let currentSlide = 0;
         // переменная принимает номер первого слайда

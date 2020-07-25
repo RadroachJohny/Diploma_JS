@@ -157,9 +157,7 @@ const carousel = () =>{
           this.slidesToShow = slidesToShowDefault;
           this.options.widthSlides = Math.ceil(100 / this.slidesToShow);
           this.addStyle();
-
         }
-
       };
 
       checkResponse();
@@ -188,14 +186,11 @@ const carousel = () =>{
     {
       breakpoint: 576,
       slidesToShow: 1
-    }
-    
+    }    
   ]
     
   });
-
-  carousel.init(); 
-  
+  carousel.init();   
 
 };
 

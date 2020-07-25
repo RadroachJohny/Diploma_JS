@@ -121,10 +121,6 @@ const photoGallery = () => {
 
   startSlide(2000);
 
-
-
-
-
 };
 
 export default photoGallery;
