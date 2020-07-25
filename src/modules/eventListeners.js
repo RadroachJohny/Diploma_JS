@@ -21,7 +21,10 @@ const eventListeners = () =>{
     }
   });
 
-  // thanks.style.display = 'block';
+  
+
+
+
 
 
   window.addEventListener('click', (event) =>{

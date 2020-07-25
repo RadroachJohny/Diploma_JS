@@ -12,7 +12,6 @@ import toTop from './modules/toTopArrow';
 import mainSlider from './modules/mainSlider';
 import carousel from './modules/carousel';
 import footerForm from './modules/form';
-// import cardTypes from './modules/cardTypes';
 
 eventListeners();
 
@@ -37,5 +36,3 @@ carousel();
 footerForm();
 
 validation();
-
-// cardTypes();
