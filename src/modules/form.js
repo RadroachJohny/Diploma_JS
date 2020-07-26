@@ -98,7 +98,7 @@ const footerForm = () =>{
   });
 
     if(document.getElementById('price-total')){
-      document.getElementById('price-total').textContent = 0;
+      document.getElementById('price-total').textContent = 1999;
       elem.reset();
     } else{
       elem.reset();
