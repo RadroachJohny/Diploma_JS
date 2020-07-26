@@ -17,6 +17,9 @@ const eventListeners = () =>{
         modalPopup = callbackForm.querySelector('.form-wrapper'),
         freeVisit = freeVisitForm.querySelector('.form-wrapper');
 
+        
+
+
 
   window.addEventListener('resize', () =>{
     if (window.innerWidth < 768) {
@@ -36,9 +39,9 @@ const eventListeners = () =>{
 
     if(target === burgerMenu){
       menu.style.display = 'flex';
-    }  else if(target.parentNode.parentNode === freeVisitBtn || target.parentNode === freeVisitBtn){
-      freeVisitForm.style.display = 'flex';
-      // popupAnimation(freeVisitForm.querySelector('.form-wrapper'));
+    } else if(target.parentNode.parentNode === freeVisitBtn || target.parentNode === freeVisitBtn){
+      freeVisitForm.style.display = 'flex';      popupAnimation(freeVisit);
+
     } else if (target === popupMenuCloseBtn){
       menu.style.display = 'none';
     } else if (target.matches('a')){
@@ -50,7 +53,7 @@ const eventListeners = () =>{
       thanks.style.display = 'none';    
     } else if(target === btnCallback) {
       callbackForm.style.display = 'flex';
-      // popupAnimation(modalPopup);
+      popupAnimation(modalPopup);
     } else if(target.closest('.clubs-list')){
       if(clubSelect.style.display !== 'block'){
         clubSelect.style.display = 'block';
@@ -63,8 +66,6 @@ const eventListeners = () =>{
 
   });
 
-
-  
 };
 
 
