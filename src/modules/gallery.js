@@ -16,17 +16,17 @@ const photoGallery = () => {
 
 
   gallerySlider.style.position = 'relative';
-  gallerySlider.append(arrowPrev);
-  gallerySlider.append(arrowNext);
+  gallerySlider.appendChild(arrowPrev);
+  gallerySlider.appendChild(arrowNext);
 
   arrowPrev.classList.add('slider-arrow', 'prev');
   arrowPrevSpan.classList.add('left');
-  arrowPrev.append(arrowPrevSpan);
+  arrowPrev.appendChild(arrowPrevSpan);
   arrowPrevSpan.textContent = '<';
 
   arrowNext.classList.add('slider-arrow', 'next');
   arrowNextSpan.classList.add('right');
-  arrowNext.append(arrowNextSpan);
+  arrowNext.appendChild(arrowNextSpan);
   arrowNextSpan.textContent = '>';
 
 
@@ -35,7 +35,7 @@ const photoGallery = () => {
     slide.forEach(() => {
       let newDot = document.createElement('li');
       newDot.classList.add('dot');
-      dotsContainer.append(newDot);
+      dotsContainer.appendChild(newDot);
     });
   };
   addBullets();

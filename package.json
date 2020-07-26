@@ -19,5 +19,12 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "cross-browser-polyfill": "^1.0.5",
+    "element-closest": "^3.0.2",
+    "fetch-polyfill": "^0.8.2",
+    "nodelist-foreach-polyfill": "^1.2.0"
   }
 }

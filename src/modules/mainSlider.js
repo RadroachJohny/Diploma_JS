@@ -1,16 +1,20 @@
 const mainSlider = () =>{
   const slide = document.querySelectorAll('.main-slider > .slide'),
+        mainSlider = document.querySelector('.main-slider'),
         dotsContainer = document.querySelector('.portfolio-dots');
 
-  let currentSlide = 0;
+
+  let currentSlide = 0,
+      interval;
         // переменная принимает номер первого слайда
 
 
   const addBullets = () => {
-    slide.forEach(() => {
+    slide.forEach((elem) => {
       let newDot = document.createElement('li');
       newDot.classList.add('dot');
-      dotsContainer.append(newDot);
+      dotsContainer.appendChild(newDot);
+
     });
   };
   addBullets();
@@ -33,10 +37,25 @@ const mainSlider = () =>{
   };
 
   const startSlide = () =>{
-    setInterval(autoPlaySlide, 2500);
+    interval = setInterval(autoPlaySlide, 2500);
   };
 
   startSlide();
+
+  const stopSlide = () =>{
+    clearInterval(interval);
+  };
+
+  mainSlider.addEventListener('mouseover', () =>{   
+      stopSlide();
+    
+  });
+  mainSlider.addEventListener('mouseout', () =>{
+      startSlide();
+    
+  });
+
+
 
 
 };

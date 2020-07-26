@@ -8,19 +8,19 @@ const carousel = () =>{
 
 
         wrapper.style.position = 'relative';
-        wrapper.append(arrowPrev);
-        wrapper.append(arrowNext);
+        wrapper.appendChild(arrowPrev);
+        wrapper.appendChild(arrowNext);
 
         arrowPrev.classList.add('slider-arrow', 'prev', 'carousel-prev' );
         arrowPrev.style.left = 14 + 'px';
         arrowPrevSpan.classList.add('carousel-prev');
-        arrowPrev.append(arrowPrevSpan);
+        arrowPrev.appendChild(arrowPrevSpan);
         arrowPrevSpan.textContent = '<';
 
         arrowNext.classList.add('slider-arrow', 'next', 'carousel-next');
         arrowNext.style.right = 7 + 'px';
         arrowNextSpan.classList.add('carousel-next');
-        arrowNext.append(arrowNextSpan);
+        arrowNext.appendChild(arrowNextSpan);
         arrowNextSpan.textContent = '>';
 
   class SliderCarousel {
