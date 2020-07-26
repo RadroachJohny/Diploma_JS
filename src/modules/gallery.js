@@ -21,11 +21,13 @@ const photoGallery = () => {
 
   arrowPrev.classList.add('slider-arrow', 'prev');
   arrowPrevSpan.classList.add('left');
+  arrowPrev.style.left = 7 + 'px';
   arrowPrev.appendChild(arrowPrevSpan);
   arrowPrevSpan.textContent = '<';
 
   arrowNext.classList.add('slider-arrow', 'next');
   arrowNextSpan.classList.add('right');
+  arrowNext.style.right = 7 + 'px';
   arrowNext.appendChild(arrowNextSpan);
   arrowNextSpan.textContent = '>';
 
