@@ -13,7 +13,6 @@ const popupAnimation = (elem) =>{
 
       elem.style.top = count + 'vh';
       if (count < 20) {
-        console.log(count);
         setTimeout(modalDown, 5, elem);
       }
     }

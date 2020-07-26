@@ -41,7 +41,6 @@ const eventListeners = () =>{
       menu.style.display = 'flex';
     } else if(target.parentNode.parentNode === freeVisitBtn || target.parentNode === freeVisitBtn){
       freeVisitForm.style.display = 'flex';      popupAnimation(freeVisit);
-
     } else if (target === popupMenuCloseBtn){
       menu.style.display = 'none';
     } else if (target.matches('a')){
