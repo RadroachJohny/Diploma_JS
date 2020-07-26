@@ -26,7 +26,6 @@ const footerForm = () =>{
     };
 
     const removeWarn = () =>{
-      // elem.removeChild(warnMessage);
       elem.querySelector('.personal-data').removeChild(warnMessage);
     };
 
@@ -53,9 +52,11 @@ const footerForm = () =>{
       statusMessage.style.color = '#000000';
     }
 
-      statusMessage.textContent = loadMessage;
+    statusMessage.textContent = loadMessage;
 
-    const formData = new FormData(elem);
+    let formData = new FormData(elem);
+    formData = Object.fromEntries(formData);
+
 
     function messageRemove() {
       statusMessage.textContent = '';
@@ -68,6 +69,7 @@ const footerForm = () =>{
 
     postData(formData)
     .then((response) => {
+      console.log(response);
       if (response.status !== 200) {
         throw new Error('status network not 200.')
       }
@@ -83,6 +85,8 @@ const footerForm = () =>{
         statusMessage.textContent = successMessage;
         setTimeout(messageRemove, 5000);
       }      
+
+
 
    
   })
@@ -112,7 +116,8 @@ const footerForm = () =>{
     return fetch('./server.php', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: formData
+      // body: formData
+      body: JSON.stringify(formData)
     });    
     
   };
