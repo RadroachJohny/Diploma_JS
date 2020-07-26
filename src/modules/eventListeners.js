@@ -13,7 +13,9 @@ const eventListeners = () =>{
         callbackForm = document.getElementById('callback_form'),
         freeVisitForm = document.getElementById('free_visit_form'),
         clubSelect = document.querySelector('.clubs-list > ul'),
-        freeVisitBtn = document.querySelector('.free-visit');
+        freeVisitBtn = document.querySelector('.free-visit'),
+        modalPopup = callbackForm.querySelector('.form-wrapper'),
+        freeVisit = freeVisitForm.querySelector('.form-wrapper');
 
 
   window.addEventListener('resize', () =>{
@@ -36,6 +38,7 @@ const eventListeners = () =>{
       menu.style.display = 'flex';
     }  else if(target.parentNode.parentNode === freeVisitBtn || target.parentNode === freeVisitBtn){
       freeVisitForm.style.display = 'flex';
+      // popupAnimation(freeVisitForm.querySelector('.form-wrapper'));
     } else if (target === popupMenuCloseBtn){
       menu.style.display = 'none';
     } else if (target.matches('a')){
@@ -47,6 +50,7 @@ const eventListeners = () =>{
       thanks.style.display = 'none';    
     } else if(target === btnCallback) {
       callbackForm.style.display = 'flex';
+      // popupAnimation(modalPopup);
     } else if(target.closest('.clubs-list')){
       if(clubSelect.style.display !== 'block'){
         clubSelect.style.display = 'block';
@@ -58,9 +62,13 @@ const eventListeners = () =>{
      }
 
   });
+
+
   
 };
 
+
+import popupAnimation from './popupAnim';
 import toTop from './toTopArrow';
 import burgerStick from './burgerSticky';
 

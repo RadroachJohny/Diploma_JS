@@ -96,7 +96,14 @@ const footerForm = () =>{
     statusMessage.textContent = errorMessage;
     console.log(error);
   });
-    elem.reset();
+
+    if(document.getElementById('price-total')){
+      document.getElementById('price-total').textContent = 0;
+      elem.reset();
+    } else{
+      elem.reset();
+    }
+
 
   });
 

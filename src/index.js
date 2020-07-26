@@ -20,6 +20,7 @@ import toTop from './modules/toTopArrow';
 import mainSlider from './modules/mainSlider';
 import carousel from './modules/carousel';
 import footerForm from './modules/form';
+// import popupAnimation from './modules/popupAnim';
 
 eventListeners();
 
@@ -40,3 +41,5 @@ carousel();
 footerForm();
 
 validation();
+
+// popupAnimation();
