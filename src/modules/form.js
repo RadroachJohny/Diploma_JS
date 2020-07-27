@@ -54,8 +54,13 @@ const footerForm = () =>{
 
     statusMessage.textContent = loadMessage;
 
-    let formData = new FormData(elem);
-    formData = Object.fromEntries(formData);
+    let formData = new FormData(elem);  
+
+    console.log(formData);
+
+    formData.forEach((val, key) => {
+      formData[key] = val;
+    });
 
 
     function messageRemove() {

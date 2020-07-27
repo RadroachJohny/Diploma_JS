@@ -24,7 +24,10 @@
     "@babel/polyfill": "^7.10.4",
     "cross-browser-polyfill": "^1.0.5",
     "element-closest": "^3.0.2",
+    "es5-shim": "^4.5.14",
     "fetch-polyfill": "^0.8.2",
-    "nodelist-foreach-polyfill": "^1.2.0"
+    "formdata-polyfill": "^3.0.20",
+    "nodelist-foreach-polyfill": "^1.2.0",
+    "object.fromentries": "^2.0.2"
   }
 }
