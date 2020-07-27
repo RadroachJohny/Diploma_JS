@@ -33,7 +33,7 @@ const photoGallery = () => {
 
 
 
-  const addBullets = () => {
+  const addBullets = () =>  {
     slide.forEach(() => {
       let newDot = document.createElement('li');
       newDot.classList.add('dot');

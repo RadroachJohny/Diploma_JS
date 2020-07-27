@@ -4,7 +4,7 @@ if (!Array.prototype.forEach) {
 
   Array.prototype.forEach = function (callback, thisArg) {
 
-    var T, k;
+    var T, k; 
 
     if (this == null) {
       throw new TypeError(' this is null or not defined');

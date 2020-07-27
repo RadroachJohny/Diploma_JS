@@ -56,7 +56,7 @@ const footerForm = () =>{
 
     let formData = new FormData(elem);  
 
-    console.log(formData);
+    // console.log(formData);
 
     formData.forEach((val, key) => {
       formData[key] = val;
@@ -74,7 +74,7 @@ const footerForm = () =>{
 
     postData(formData)
     .then((response) => {
-      console.log(response);
+      // console.log(response);
       if (response.status !== 200) {
         throw new Error('status network not 200.')
       }
