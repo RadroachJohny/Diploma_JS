@@ -90,6 +90,7 @@ import carousel from './modules/carousel';
 import footerForm from './modules/form';
 // import popupAnimation from './modules/popupAnim';
 
+
 eventListeners();
 
 burgerStick();

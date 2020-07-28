@@ -54,7 +54,7 @@ const footerForm = () =>{
 
     statusMessage.textContent = loadMessage;
 
-    let formData = new FormData(elem);  
+    let formData = new FormData(elem);
 
     // console.log(formData);
 
