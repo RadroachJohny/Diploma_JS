@@ -7,8 +7,8 @@ const validation = () =>{
     if(!elem.id){
       
       elem.addEventListener('input', () => {
-        // elem.value = elem.value.match(/^[а-яё\s]+$/ig);
-        elem.value = elem.value.match(/[[а-яё]+[\s]*]*/ig);
+        elem.value = elem.value.match(/^[а-яё\s]+$/ig);
+        // elem.value = elem.value.match(/[[а-яё]+[\s]*]*/ig);
       })
     }
   });
