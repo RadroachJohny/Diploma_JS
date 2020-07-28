@@ -7,8 +7,15 @@ const validation = () =>{
     if(!elem.id){
       
       elem.addEventListener('input', () => {
-        elem.value = elem.value.match(/^[а-яё\s]+$/ig);
+        elem.value = elem.value.replace(/[^[а-яё ]]*/ig, '');
+        // elem.value = elem.value.match(/^[а-яё\s]+$/ig);
         // elem.value = elem.value.match(/[[а-яё]+[\s]*]*/ig);
+
+        // elem.value = elem.value.match(/^[\W+( \W+)]*/i);
+        // elem.value = elem.value.match(/\W+\s/i);
+        // elem.value = elem.value.replace(/[^\W+( \W+)]$/i, '');
+
+
       })
     }
   });
